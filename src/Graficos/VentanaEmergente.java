@@ -35,12 +35,15 @@ public class VentanaEmergente extends JFrame{
         this.add(Jtitulo);
         
         Jfoto = new JLabelImage();
+        Jfoto.setBorder(new EmptyBorder(5,10,0,10));
         Jfoto.setAlignmentX(Component.CENTER_ALIGNMENT);
         this.add(Jfoto);
         Jwebsite = new JLabel();
+        Jwebsite.setBorder(new EmptyBorder(5,10,0,10));
         Jwebsite.setAlignmentX(Component.CENTER_ALIGNMENT);
         this.add(Jwebsite);
         Jdescripcion = new JLabel();
+        Jdescripcion.setBorder(new EmptyBorder(5,10,0,10));
         Jdescripcion.setAlignmentX(Component.CENTER_ALIGNMENT);
         this.add(Jdescripcion);
 

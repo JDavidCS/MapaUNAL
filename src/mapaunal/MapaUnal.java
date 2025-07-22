@@ -55,28 +55,57 @@ public class MapaUnal {
         edificios.put(yu.getCodigo(), yu);
         
         // Servicios - Servicios repetidos key 0-5
-        Servicio biblio1 = new Servicio("Biblioteca Gabriel Garcia Marquez", "horario: 7-18");
+        Servicio biblio1 = new Servicio(
+                "Biblioteca Gabriel Garcia Marquez", "<html>HORARIO:<br>Lunes a jueves: 6 a.m. a 10 p.m."
+                        + "<br>Viernes: 6 a.m. a 4 p.m. "
+                        + "<br>Sabados: 8 a.m. a 5 p.m.</html>"
+        );
         servicios.put(102, biblio1);
-        Servicio biblio2 = new Servicio("Biblioteca de Ciencia y Tecnologia", "horario: 7-18");
+        Servicio biblio2 = new Servicio("Biblioteca de Ciencia y Tecnologia", "<html>HORARIO:<br>Lunes a jueves: 6 a.m. a 10 p.m."
+                        + "<br>Viernes: 6 a.m. a 4 p.m. <br>Sabados: 8 a.m. a 5 p.m.</html>");
         servicios.put(454, biblio2);
-        Servicio biblio3 = new Servicio("Biblioteca (hemeroteca) Nacional Universitaria Carlos Lleras Restrepo", "horario: 7-18");
+        Servicio biblio3 = new Servicio("Biblioteca (hemeroteca) Nacional Universitaria Carlos Lleras Restrepo", "<html>HORARIO:"
+                        + "<br>Lunes a jueves: 7 a.m. a 10 p.m."
+                        + "<br>Viernes: 7 a.m. a 4 p.m. "
+                        + "<br>Sabados: 8 a.m. a 5 p.m.</html>");
         servicios.put(571, biblio3);
-        Servicio biblio4 = new Servicio("Biblioteca Posgrados de Ciencias Humanas Ernesto Guhl", "horario: 7-18");
+        Servicio biblio4 = new Servicio("Biblioteca Posgrados de Ciencias Humanas Ernesto Guhl", "<html>HORARIO:"
+                        + "<br>Lunes a jueves: 7 a.m. a 8 p.m."
+                        + "<br>Viernes: 7 a.m. a 4 p.m. "
+                        + "<br>Sabados: 8 a.m. a 1 p.m.</html>");
         servicios.put(225, biblio4);
-        Servicio biblio5 = new Servicio("Biblioteca Derecho y Ciencias Politicas Arturo Valencia Zea", "horario: 7-18");
+        Servicio biblio5 = new Servicio("Biblioteca Derecho y Ciencias Politicas Arturo Valencia Zea", "<html>HORARIO:"
+                        + "<br>Lunes a jueves: 7 a.m. a 8 p.m."
+                        + "<br>Viernes: 7 a.m. a 4 p.m. "
+                        + "<br>Sabados: 8 a.m. a 1 p.m.</html>");
         servicios.put(201, biblio5);
-        Servicio biblio6 = new Servicio("Biblioteca Ciencias Economicas Antonio Garcia Nossa", "horario: 7-18");
+        Servicio biblio6 = new Servicio("Biblioteca Ciencias Economicas Antonio Garcia Nossa", "<html>HORARIO:"
+                        + "<br>Lunes a jueves: 7 a.m. a 8 p.m."
+                        + "<br>Viernes: 7 a.m. a 4 p.m. "
+                        + "<br>Sabados: 8 a.m. a 1 p.m.</html>");
         servicios.put(310, biblio6);
-        Servicio biblio7 = new Servicio("Biblioteca Ciencias Agrarias", "horario: 7-18");
+        Servicio biblio7 = new Servicio("Biblioteca Ciencias Agrarias", "<html>HORARIO:"
+                        + "<br>Lunes a jueves: 7 a.m. a 8 p.m."
+                        + "<br>Viernes: 7 a.m. a 4 p.m. "
+                        + "<br>Sabados: 8 a.m. a 1 p.m.</html>");
         servicios.put(500, biblio7);
-        Servicio biblio8 = new Servicio("Biblioteca de Lenguas Extranjeras", "horario: 7-18");
+        Servicio biblio8 = new Servicio("Biblioteca de Lenguas Extranjeras", "<html>HORARIO:"
+                        + "<br>Lunes a jueves: 7 a.m. a 8 p.m."
+                        + "<br>Viernes: 7 a.m. a 4 p.m. "
+                        + "<br>Sabados: 8 a.m. a 5 p.m.</html>");
         servicios.put(231, biblio8);
+        Servicio biblio9 = new Servicio("Biblioteca Colegio IPARM", "<html>HORARIO:"
+                        + "<br>Lunes a jueves: 7 a.m. a 8 p.m."
+                        + "<br>Viernes: 7 a.m. a 4 p.m. "
+                        + "<br>Sabados: 8 a.m. a 5 p.m.</html>");
+        servicios.put(431, biblio9);
         
-        Servicio biciRun = new Servicio("Bicirun", "Horario\nLunes a viernes de 6:30 a.m. | 3:30 p.m.", "/images/pinBicicleta.png");
+        Servicio biciRun = new Servicio("Bicirun", "Horario: Lunes a viernes de 6:30 a.m. | 3:30 p.m.", "/images/pinBicicleta.png");
         servicios.put(1, biciRun);
         Servicio cafeteria = new Servicio("Cafeteria", "", "/images/pinCafeteria.png");
         servicios.put(2, cafeteria);
-        Servicio comedor = new Servicio("Comedor", "HORARIOS:\n Desayuno: 6:00 am a 9:00 am\n Almuerzo: 11:30 am a 2:30 pm", "/images/pinComedor.png");
+        Servicio comedor = new Servicio("Comedor", "<html>HORARIOS: Desayuno: 6:00 am a 9:00 am "
+                        + "<br>Almuerzo: 11:30 am a 2:30 pm</html>", "/images/pinComedor.png");
         servicios.put(3, comedor);
         
         Objeto obj = new Objeto("Punto de Agua", "/images/objetoAgua.png");

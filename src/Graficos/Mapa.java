@@ -114,11 +114,17 @@ public class Mapa extends JPanel{
         JLabel edPin = MapaUnal.edificios.get(453).getPin();
         edPin.setLocation(95,500);
         this.add(edPin);
+        JLabel serPin = MapaUnal.servicios.get(431).getPin();
+        serPin.setLocation(60, 300);
+        this.add(serPin);
+        JLabel ob = MapaUnal.objetos.get("maquina").getPin();
+        ob.setLocation(100, 500);
+        this.add(ob);
         
         
         Pantalla.menuLateral.setEdificios(new ArrayList<>(Arrays.asList(edPin)));
-        Pantalla.menuLateral.setServicios(new ArrayList<>(Arrays.asList()));
-        Pantalla.menuLateral.setObjetos(new ArrayList<>(Arrays.asList()));
+        Pantalla.menuLateral.setServicios(new ArrayList<>(Arrays.asList(serPin)));
+        Pantalla.menuLateral.setObjetos(new ArrayList<>(Arrays.asList(ob)));
         this.revalidate();
         this.repaint();
     }
@@ -142,8 +148,22 @@ public class Mapa extends JPanel{
         edPin3.setLocation(520,430);
         this.add(edPin3);
         
+        JLabel serPin = MapaUnal.servicios.get(571).getPin();
+        serPin.setLocation(60, 320);
+        this.add(serPin);
+        
+        JLabel serPin2 = MapaUnal.servicios.get(500).getPin();
+        serPin2.setLocation(410, 270);
+        this.add(serPin2);
+        
+        JLabel serPin3 = MapaUnal.servicios.get(225).getPin();
+        serPin3.setLocation(520, 370);
+        this.add(serPin3);
+        
+        
+        
         Pantalla.menuLateral.setEdificios(new ArrayList<>(Arrays.asList(edPin, edPin2, edPin3)));
-        Pantalla.menuLateral.setServicios(new ArrayList<>(Arrays.asList()));
+        Pantalla.menuLateral.setServicios(new ArrayList<>(Arrays.asList(serPin,serPin2,serPin3)));
         Pantalla.menuLateral.setObjetos(new ArrayList<>(Arrays.asList()));
         
         this.revalidate();
@@ -174,21 +194,25 @@ public class Mapa extends JPanel{
         edPin4.setLocation(205, 0);
         this.add(edPin4);
         
-        JLabel serPin4 = MapaUnal.servicios.get(102).getPin();
-        serPin4.setLocation(200, 210);
-        this.add(serPin4);
+        JLabel serPin = MapaUnal.servicios.get(102).getPin();
+        serPin.setLocation(200, 210);
+        this.add(serPin);
+        
+        JLabel serPin2 = MapaUnal.servicios.get(571).getPin();
+        serPin2.setLocation(140, 220);
+        this.add(serPin2);
         
         JLabel ob1 = MapaUnal.objetos.get("maquina").getPin();
-        ob1.setLocation(188,55);
+        ob1.setLocation(185,50);
         this.add(ob1);
         
         JLabel ob2 = MapaUnal.objetos.get("agua").getPin();
-        ob2.setLocation(185,50);
+        ob2.setLocation(178,50);
         this.add(ob2);
         
         //pasar los pines
         Pantalla.menuLateral.setEdificios(new ArrayList<>(Arrays.asList(edPin, edPin2, edPin3, edPin4)));
-        Pantalla.menuLateral.setServicios(new ArrayList<>(Arrays.asList(serPin4)));
+        Pantalla.menuLateral.setServicios(new ArrayList<>(Arrays.asList(serPin,serPin2)));
         Pantalla.menuLateral.setObjetos(new ArrayList<>(Arrays.asList(ob1, ob2)));
         
         this.revalidate();
