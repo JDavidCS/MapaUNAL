@@ -51,25 +51,26 @@ public class Mapa extends JPanel{
         renderMapaGeneral();
     }
     
+    // Muestra el mapa inicial dividido en 4 secciones.
     public void renderMapaGeneral(){
         this.removeAll();
         this.setLayout(new GridLayout(2,2));
         mapaActual = mapaGeneral;
         
         Pantalla.menuLateral.setChecklist(false);
-        Boton boton1 = new Boton("TOP L");
+        Boton boton1 = new Boton();
         boton1.addActionListener((ActionEvent e) -> {
             renderIzquierdaArriba();
         });
-        Boton boton2 = new Boton("TOP R");
+        Boton boton2 = new Boton();
         boton2.addActionListener((ActionEvent e) -> {
             renderDerechaArriba();
         });
-        Boton boton3 = new Boton("BOTTOM L");
+        Boton boton3 = new Boton();
         boton3.addActionListener((ActionEvent e) -> {
             renderIzquierdaAbajo();
         });
-        Boton boton4 = new Boton("BOTTOM R");
+        Boton boton4 = new Boton();
         boton4.addActionListener((ActionEvent e) -> {
             renderDerechaAbajo();
         });

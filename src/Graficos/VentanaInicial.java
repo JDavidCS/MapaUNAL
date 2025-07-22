@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 /**
  *
  * @author jdcor
+ * Ventana Principal
  */
 public class VentanaInicial extends JFrame{
     public VentanaInicial(String nombre){

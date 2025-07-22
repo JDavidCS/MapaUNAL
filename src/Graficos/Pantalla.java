@@ -20,8 +20,8 @@ public class Pantalla extends JPanel {
         iniciar();
     }
     
+    // La pantalla se divide en el mení lateral y El mapa
     private void iniciar(){
-        // Para permitir un tamaño fijo al mapa
         JPanel adapt = new JPanel();
         adapt.setLayout(null);
         

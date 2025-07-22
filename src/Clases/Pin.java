@@ -29,6 +29,7 @@ public class Pin extends JLabel{
         try {
             image = ImageIO.read(getClass().getResource(srcPinIcon));
             
+            // para mantener las proporciones de una imagen, se manda la dimension height y se calcula el width
             int widthOriginal = image.getWidth();
             int heightOriginal = image.getHeight();
             height = tamano;
@@ -61,6 +62,7 @@ public class Pin extends JLabel{
     
     
 
+    // Metodo interno llamado manualmente con "repaint()"
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
